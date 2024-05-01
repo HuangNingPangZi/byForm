@@ -1,26 +1,46 @@
-# byForm在线表单
+# byForm, an online form designer application created in ByLanguage.
 
-## 介绍
-在线表单设计器，可在线拖拽完成表单设计。
-可一键制作：在线订单、在线报名、在线登记、在线收集意见反馈、调查统计、会议预约。
-支持通过一段js脚本调用，也可以集成到任意的网页中运行，这是现在主流的在线表单程序做不到的。 本项目是用拜语言写的，代码总行数：4442，包括前端、后端的代码总量，服务端支持java & c#双语言，可以选择java或c#一种即可，数据库支持 MS sqlserver & mysql & oracle 三种数据库，可选择一种即可。 
-提供在线体验地址 https://saas.baiyuyan.com/ 
-调用示例代码：
+## Description
+This is an online form designer, allow users to design a form using drag & drop operations.
+
+All of the following application forms can be built in jsut one step: 
+    Online-ordering, online-registration, online feedback collection, online questionnaires and online conferences arrangement...
+
+Supporting inserting to any website using just one line of <script> tag, which cannot be achieved by current form-generators;
+This project is written in the By Language, with a total of 4442 lines of codes, including Webside Javascript, Desktop-side c# client, Server-side c# program and server-side Java program, supporting MS sqlServer, MySql and Oracle as its Sql Engine. 
+
+Online demo at: https://saas.baiyuyan.com/
+
+Inject the following script tag into your html file to try this app：
+
 <script>window.localStorage.setItem("_byt_saasid_storage", "0F8BFBFF000506570257810700030001")</script> <script src="https://saas.baiyuyan.com/form.js"> </script>
 
-## 软件架构
-本项目用拜语言写的，拜语言原代码经过转译后会被翻译成：java & c# & javascript oracle\mysql\sql server 服务端支持 java & c# 双语言，前端支持 javascript ，数据库端支持 oracle\mysql\sql server。
+## Project Structure
+This project is written in the By Language, the project includes one part of By Language Source code, and all the above platform sides code transpiled from the By-code base.(Web JavaScript, C# client, C# server, Java server, Sql database)
+|--src
+   |--lib               (all referenced by libraries)
+   |--byForm            (the core byForm project folder)
+       |--src           (the By Laugnage code base, grouped by 'ku' (which is a basic packaging unit in the By Language, similar to a pagakge in Java))
+       |--scene         (the extra files used in multiple-platforms, such as using .html files in Web and using .resx files in client.)
+       |--out           (the output folder, containing all codes of transpiled program)
+          |-- database   (containing database SQL scripts)
+          |-- saas       (containing the outputed SaaS Web Application, can be deployed to the server and consumed by any website.)
+          |-- web        (containing the outputed Web Application, including the corresponding JavaScript files)
+          |-- server     (containing the stand-alone Server Application, including Java and C#)
+       |--byForm.config (the project configure file, containing information about ku reference and project deployment.)
 
-## 安装教程
-如果你下载了本项目，需要另外下载拜语言的IDE(拜语言开发工具)， 用拜语言IDE打开本项目执行一下转译即可在本项目的out目录下得到可以独立布署的第三方编程语言java、c#、js等源代码。
+(More information about our Project structure is at out main site)
 
-out目录介绍 out--database 目录放数据库建库建表sql脚本 out--saas saas项目直接部署文件，支持通过一段js脚本集成到任意的网页中运行 out--server 服务器端源代码目录，支持c#&java双语言 out--web 前端js与网页目录 out--web--Byt--settings.json 文件为配置服务器url地址的配署文件，可在布署时设定。
+## Programming and Testing
+You can directly use the transplied program in the 'out' folder, 
+Or you can download our By Language IDE at https://www.baiyuyan.com/   https://www.baiyuyan.com/download_en.html
 
-安装视频教程 https://www.baiyuyan.com/player.html?id=18
+Our IDE is totally free, supporting code-analysis, intellisense, auto-complete and auto-deployment.
+You can easily get your own out-folders in just one single 'transpile' in our IDE, creating your own JavaScript, C#, Java and Sql outputs.
 
-## 使用说明
-安装视频教程 https://www.baiyuyan.com/player.html?id=18
 
-参与贡献
 
-特技
+## Toturial
+Toturial videos at:  https://www.baiyuyan.com/player.html?id=18
+
+Donations
