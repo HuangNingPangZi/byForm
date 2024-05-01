@@ -1,9 +1,13 @@
 # byForm在线表单
 
 ## 介绍
-byForm在线表单,开源MIT，支持通过一段js脚本调用，也可以集成到任意的网页中运行， 这是现在主流的在线表单程序做不到的。 本项目是用拜语言写的，代码总行数：4442，包括前端、后端的代码总量， 服务端支持java & c#双语言，可以选择java或c#一种即可，数据库支持 MS sqlserver & mysql & oracle 三种数据库，可选择一种即可。 示例站点 https://saas.baiyuyan.com/ 调用示例代码：
-
+在线表单设计器，可在线拖拽完成表单设计。
+可一键制作：在线订单、在线报名、在线登记、在线收集意见反馈、调查统计、会议预约。
+支持通过一段js脚本调用，也可以集成到任意的网页中运行，这是现在主流的在线表单程序做不到的。 本项目是用拜语言写的，代码总行数：4442，包括前端、后端的代码总量，服务端支持java & c#双语言，可以选择java或c#一种即可，数据库支持 MS sqlserver & mysql & oracle 三种数据库，可选择一种即可。 
+提供在线体验地址 https://saas.baiyuyan.com/ 
+调用示例代码：
 <script>window.localStorage.setItem("_byt_saasid_storage", "0F8BFBFF000506570257810700030001")</script> <script src="https://saas.baiyuyan.com/form.js"> </script>
+
 ## 软件架构
 本项目用拜语言写的，拜语言原代码经过转译后会被翻译成：java & c# & javascript oracle\mysql\sql server 服务端支持 java & c# 双语言，前端支持 javascript ，数据库端支持 oracle\mysql\sql server。
 
